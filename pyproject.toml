@@ -1,0 +1,129 @@
+[project]
+name = "televoicer"
+version = "0.1.0"
+description = ""
+authors = [{ name = "lordralinc", email = "lordralinc@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "aiogram (>=3.17.0,<4.0.0)",
+    "python-dotenv (>=1.0.1,<2.0.0)",
+    "rich (>=13.9.4,<14.0.0)",
+    "tortoise-orm (>=0.24.0,<0.25.0)",
+    "babel (>=2.17.0,<3.0.0)",
+    "pydub (>=0.25.1,<0.26.0)",
+    "audioop-lts (>=0.2.1,<0.3.0)",
+]
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+ruff = ">=0.0.246"
+pytest = "^8.3.4"
+
+[tool.black]
+line-length = 99
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 99
+respect-gitignore = true
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "F401",
+    "PL",
+    "F",
+    "E",
+    "W",
+    "C90",
+    "I",
+    "N",
+    "YTT",
+    "S",
+    "B",
+    "A",
+    "C40",
+    "T10",
+    "EXE",
+    "ISC",
+    "ICN",
+    "G",
+    "PIE",
+    "T20",
+    "PT",
+    "SIM",
+    "TID",
+    "TCH",
+    "ARG",
+    "PGH",
+    "RSE",
+    "RUF",
+    "ALL",
+]
+ignore = [
+    "S101",
+    "TD001",
+    "FIX001",
+    "ARG001",
+    "RUF006",
+    "C901",
+    "PLR0912",
+    "PLR0911",
+    "TD002",
+    "FIX002",
+    "TD003",
+    "ANN",
+    "BLE",
+    "FBT",
+    "COM",
+    "DTZ",
+    "DJ",
+    "EM",
+    "INP",
+    "PYI",
+    "Q",
+    "RET",
+    "PTH",
+    "ERA",
+    "PD",
+    "D",
+    "TRY",
+    "SLF",
+    "G004",
+    "E501",
+    "B905",
+    "PLR0913",
+    "A003",
+    "N818",
+    "PGH003",
+    "ARG002",
+    "RUF001",
+    "RUF002",
+    "RUF003",
+    "PLW2901",
+    "PLE1205",
+    "B030",
+    "S311",
+    "S301",
+    "ISC001",
+]
+
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+    "classmethod",
+    "pydantic.validator",
+    "pydantic.root_validator",
+]
+
+[tool.ruff.lint.flake8-type-checking]
+exempt-modules = ["typing_extensions", "typing"]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
