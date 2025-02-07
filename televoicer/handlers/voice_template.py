@@ -142,7 +142,7 @@ async def show_user_templates(inline_query: types.InlineQuery, name: str):
         [
             types.InlineQueryResultCachedVoice(
                 id=f"tv:vt:{template.id.hex}",
-                title=_("Voice template {name}").format(template.name),
+                title=_("Voice template {name}").format(name=template.name),
                 voice_file_id=template.file_id,
             )
             for template in templates
