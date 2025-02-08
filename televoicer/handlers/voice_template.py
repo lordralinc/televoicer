@@ -117,6 +117,27 @@ async def show_voice_template(message: types.Message, name: str):
     await message.reply_voice(template.file_id)
 
 
+@router.message(
+    utils.multiregexp(
+        F.text,
+        r"^\-гшаб (?P<name>[a-zA-ZА-Яа-яёЁ0-9 \.\-\+\!]+)$",
+        r"^\-vt (?P<name>[a-zA-ZА-Яа-яёЁ0-9 \.\-\+\!]+)$",
+    )
+    .group("name")
+    .as_("name")
+)
+async def delete_voice_template(message: types.Message, name: str):
+    template = await models.VoiceTemplate.get_or_none(
+        user_id=utils.cast(message.from_user).id, name=name
+    )
+    if template is None:
+        return await message.reply(
+            _("💔 Voice template {name} not found.").format(name=html.bold(name))
+        )
+    await template.delete()
+    await message.reply(_("💔 Voice template {name} deteled.").format(name=html.bold(name)))
+
+
 @router.inline_query(
     utils.multiregexp(
         F.query,

@@ -46,8 +46,7 @@ DATABASE_URL="sqlite://db.sqlite3"
 
 5. Запустите бота:
 ```bash
-poetry shell
-./manage.sh compile
+bash ./manage.sh compile
 poetry run python -m televoicer
 ```
 

@@ -5,10 +5,13 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: televoicer 0.1.0\n"
-"POT-Creation-Date: 2025-02-08 00:23+0300\n"
+"Project-Id-Version: televoicer 0.1.1\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-02-08 04:24+0300\n"
 "PO-Revision-Date: 2025-02-07 18:53+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ru\n"
+"Language-Team: ru <LL@li.org>\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "MIME-Version: 1.0\n"
@@ -20,10 +23,12 @@ msgstr ""
 #, python-brace-format
 msgid ""
 "🌟 Hi! I'm Televoicer, your voice archive!\n"
+"\nSource code: github.com/lordralinc/televoicer"
 "\n"
 "{url}"
 msgstr ""
 "🌟 Привет! Я - televoicer, Ваш голосовой архив!\n"
+"\nИсходный код: github.com/lordralinc/televoicer"
 "\n"
 "{url}"
 
@@ -37,44 +42,56 @@ msgstr "Узнать обо мне можно в инструкции"
 msgid "https://teletype.in/@lordralinc/televoicer_en"
 msgstr "https://teletype.in/@lordralinc/televoicer"
 
-#: televoicer/handlers/voice_template.py:47
+#: televoicer/handlers/voice_template.py:44
+#, python-brace-format
+msgid "💔 The voice template {name} already exists."
+msgstr "❤️ Голосовой шаблон {name} уже существует."
+
+#: televoicer/handlers/voice_template.py:51
+#: televoicer/handlers/voice_template.py:77
+#, python-brace-format
+msgid "❤️ Voice template {name} is being created..."
+msgstr "❤️ Голосовой шаблон {name} создается..."
+
+#: televoicer/handlers/voice_template.py:57
 #, python-brace-format
 msgid "💔 You must attach {formats} or {format_last} audio."
 msgstr "💔 Вы должны прикрепить аудио в форматах {formats} или {format_last}."
 
-#: televoicer/handlers/voice_template.py:55
+#: televoicer/handlers/voice_template.py:64
 #, python-brace-format
 msgid "💔 Audio in format {mime} not supported. Use {formats} or {format_last}."
 msgstr ""
 "💔 Аудио в формате {mime} не поддерживается. Используйте {formats} или "
 "{format_last}."
 
-#: televoicer/handlers/voice_template.py:69
-#, python-brace-format
-msgid "❤️ Voice template {name} is being created..."
-msgstr "❤️ Голосовой шаблон {name} создается..."
-
-#: televoicer/handlers/voice_template.py:74
+#: televoicer/handlers/voice_template.py:82
 #, python-brace-format
 msgid "❤️ Voice template {name} created!"
 msgstr "❤️ Голосовой шаблон {name} создан!"
 
-#: televoicer/handlers/voice_template.py:84
+#: televoicer/handlers/voice_template.py:92
 #, no-format
 msgid "💔 You don't have any voice templates yet."
 msgstr "❤️ У вас еще нет голосовых шаблонов."
 
-#: televoicer/handlers/voice_template.py:87
+#: televoicer/handlers/voice_template.py:95
 #, no-format
 msgid "❤️ Your voice templates:\n"
 msgstr "❤️ Ваши голосовые шаблоны:\n"
 
-#: televoicer/handlers/voice_template.py:106
+#: televoicer/handlers/voice_template.py:115
+#: televoicer/handlers/voice_template.py:135
 #, python-brace-format
 msgid "💔 Voice template {name} not found."
 msgstr "💔 Голосовой шаблон {name} не найден."
 
-#: televoicer/handlers/voice_template.py:136
+#: televoicer/handlers/voice_template.py:138
+#, python-brace-format
+msgid "💔 Voice template {name} deteled."
+msgstr "❤️ Голосовой шаблон {name} удалён!"
+
+#: televoicer/handlers/voice_template.py:166
 #, python-brace-format
 msgid "Voice template {name}"
 msgstr "Голосовой шаблон {name}"

@@ -1,6 +1,6 @@
 [project]
 name = "televoicer"
-version = "0.1.0+hf1"
+version = "0.1.1"
 description = ""
 authors = [{ name = "lordralinc", email = "lordralinc@gmail.com" }]
 readme = "README.md"
