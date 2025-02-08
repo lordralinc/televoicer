@@ -17,5 +17,4 @@ async def on_start_handler(message: types.Message):
                 _("https://teletype.in/@lordralinc/televoicer_en"),
             )
         ),
-        link_preview_options=types.LinkPreviewOptions(is_disabled=False),
     )

@@ -23,7 +23,7 @@ msgstr ""
 #, python-brace-format
 msgid ""
 "🌟 Hi! I'm Televoicer, your voice archive!\n"
-"\nSource code: github.com/lordralinc/televoicer"
+"Source code: github.com/lordralinc/televoicer\n"
 "\n"
 "{url}"
 msgstr ""
