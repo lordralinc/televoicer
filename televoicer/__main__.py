@@ -50,5 +50,6 @@ if __name__ == "__main__":
     dp.callback_query.outer_middleware(i18n_middleware)
     dp.message.middleware(CreateUserMiddleware())
     dp.callback_query.middleware(CreateUserMiddleware())
+    dp.inline_query.middleware(CreateUserMiddleware())
     dp.include_router(router)
     dp.run_polling(bot)
