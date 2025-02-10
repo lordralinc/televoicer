@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: televoicer 0.1.1\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-02-08 04:24+0300\n"
+"POT-Creation-Date: 2025-02-10 21:22+0300\n"
 "PO-Revision-Date: 2025-02-07 18:53+0300\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -18,78 +18,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: televoicer/handlers/start.py:12
+#: televoicer/commands.py:13
+msgid "Show help"
+msgstr ""
+
+#: televoicer/commands.py:14
+msgid "View your templates"
+msgstr ""
+
+#: televoicer/commands.py:16
+msgid "View your voice template packs"
+msgstr ""
+
+#: televoicer/commands.py:19
+msgid "Browse public voice template packs"
+msgstr ""
+
+#: televoicer/commands.py:21
+msgid "Cancel current action"
+msgstr ""
+
+#: televoicer/handlers/start.py:15
 #, python-brace-format
 msgid ""
 "🌟 Hi! I'm Televoicer, your voice archive!\n"
 "Source code: github.com/lordralinc/televoicer\n"
 "\n"
-"{url}"
-msgstr ""
-"🌟 Hi! I'm Televoicer, your voice archive!\n"
-"\nSource code: github.com/lordralinc/televoicer"
 "\n"
 "{url}"
+msgstr ""
 
-#: televoicer/handlers/start.py:14
-#, no-format
+#: televoicer/handlers/start.py:18
 msgid "Learn more about me in the guide"
-msgstr "Learn more about me in the guide"
+msgstr ""
 
-#: televoicer/handlers/start.py:15
-#, no-format
+#: televoicer/handlers/start.py:19
 msgid "https://teletype.in/@lordralinc/televoicer_en"
-msgstr "https://teletype.in/@lordralinc/televoicer_en"
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:44
+#: televoicer/handlers/start.py:32
+msgid "💔 Current request cancelled."
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/add_voice.py:34
+#: televoicer/handlers/voice_template_packs/import_pack.py:21
+#: televoicer/handlers/voice_template_packs/remove_pack.py:27
+#: televoicer/handlers/voice_template_packs/remove_voice.py:36
+#: televoicer/handlers/voice_template_packs/view_pack.py:53
 #, python-brace-format
-msgid "💔 The voice template {name} already exists."
-msgstr "💔 The voice template {name} already exists."
+msgid "💔 Voice pack with shortcode {shortcode} not found!"
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:51
-#: televoicer/handlers/voice_template.py:77
+#: televoicer/handlers/voice_template_packs/add_voice.py:41
+#: televoicer/handlers/voice_template_packs/remove_voice.py:43
+#, python-brace-format
+msgid "💔 Template {name} not found!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/add_voice.py:45
+#, python-brace-format
+msgid "💔 Template {name} is already in the pack!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/add_voice.py:52
+#, python-brace-format
+msgid ""
+"❤️ Template {template_name} has been successfully added to the pack "
+"{pack_name}!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/create.py:53
+#, python-brace-format
+msgid "💔 The voice template pack {name} already exists."
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/create.py:65
+#, python-brace-format
+msgid ""
+"❤️ Voice template pack {name} has been created!\n"
+"🔖 Shortcode: {shortcode}\n"
+"🔗 Link to add the pack: {add_url}\n"
+"\n"
+"✨ Use the {command} command to add templates to the pack!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/create.py:73
+#, python-brace-format
+msgid "pack add {shortcode} name"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/global_pack_list.py:54
+msgid "💔 Don't have any voice template packs yet."
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/global_pack_list.py:66
+#: televoicer/handlers/voice_template_packs/global_pack_list.py:78
+#, python-brace-format
+msgid "❤️ Voice template packs ({page}/{total_page}):\n"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/import_pack.py:61
+#, python-brace-format
+msgid "❤️ Added {count} new voice templates: {templates}"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/import_pack.py:69
+#, python-brace-format
+msgid "💔 Skipped {count} already existing templates: {templates}"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/import_pack.py:78
+msgid "💔 No new templates were added."
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/packs_list.py:52
+msgid "💔 You don't have any voice template packs yet."
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/packs_list.py:64
+#: televoicer/handlers/voice_template_packs/packs_list.py:76
+#, python-brace-format
+msgid "❤️ Your voice template packs ({page}/{total_page}):\n"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/remove_pack.py:33
+#, python-brace-format
+msgid "❤️ Template pack {pack_name} has been successfully deleted!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/remove_voice.py:47
+#, python-brace-format
+msgid "💔 Template {name} not exists in the pack!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/remove_voice.py:52
+#, python-brace-format
+msgid ""
+"❤️ Template {template_name} has been successfully remove from the pack "
+"{pack_name}!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:87
+msgid "view templates"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:92
+msgid "change privacy"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:103
+msgid "regenerate shortcode"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:107
+msgid "delete"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:113
+#, python-brace-format
+msgid ""
+"📢 {mode} voice pack {name} ({shortcode}) by {user_link}\n"
+"📊 Usage count: {usage_count}\n"
+"📝 Templates count: {templates_count}\n"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:118
+msgid "Private"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:120
+msgid "Public"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:168
+msgid "<< back"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:185
+#, python-brace-format
+msgid "❤️ Voice templates in the {pack_name} pack ({page}/{total_pages})"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:234
+#, python-brace-format
+msgid "💔 Voice pack {name} (shortcode: {shortcode}) has been deleted!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:241
+msgid "YES, DELETE"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:243
+msgid "NO, DON'T DELETE"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:247
+msgid "⚠️ Warning!"
+msgstr ""
+
+#: televoicer/handlers/voice_template_packs/view_pack.py:250
+msgid ""
+"This action is irreversible. Once deleted, the voice pack cannot be "
+"restored. Statistics will be permanently deleted, but templates will "
+"remain."
+msgstr ""
+
+#: televoicer/handlers/voice_templates/create.py:33
+#: televoicer/handlers/voice_templates/create.py:60
 #, python-brace-format
 msgid "❤️ Voice template {name} is being created..."
-msgstr "❤️ Voice template {name} is being created..."
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:57
+#: televoicer/handlers/voice_templates/create.py:42
 #, python-brace-format
 msgid "💔 You must attach {formats} or {format_last} audio."
-msgstr "💔 You must attach {formats} or {format_last} audio."
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:64
+#: televoicer/handlers/voice_templates/create.py:49
 #, python-brace-format
 msgid "💔 Audio in format {mime} not supported. Use {formats} or {format_last}."
-msgstr "💔 Audio in format {mime} not supported. Use {formats} or {format_last}."
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:82
+#: televoicer/handlers/voice_templates/create.py:71
+#: televoicer/handlers/voice_templates/create.py:167
 #, python-brace-format
 msgid "❤️ Voice template {name} created!"
-msgstr "❤️ Voice template {name} created!"
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:92
-#, no-format
-msgid "💔 You don't have any voice templates yet."
-msgstr "💔 You don't have any voice templates yet."
+#: televoicer/handlers/voice_templates/create.py:100
+#: televoicer/handlers/voice_templates/create.py:137
+#: televoicer/handlers/voice_templates/create.py:158
+#, python-brace-format
+msgid "💔 The voice template {name} already exists."
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:95
-#, no-format
-msgid "❤️ Your voice templates:\n"
-msgstr "❤️ Your voice templates:\n"
+#: televoicer/handlers/voice_templates/create.py:126
+msgid "💔 No valid audio file found."
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:115
-#: televoicer/handlers/voice_template.py:135
+#: televoicer/handlers/voice_templates/create.py:145
+#: televoicer/handlers/voice_templates/create.py:162
+msgid "❤️ Enter name for template or type /cancel to cancel request"
+msgstr ""
+
+#: televoicer/handlers/voice_templates/delete.py:26
+#: televoicer/handlers/voice_templates/run.py:27
 #, python-brace-format
 msgid "💔 Voice template {name} not found."
-msgstr "💔 Voice template {name} not found"
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:138
+#: televoicer/handlers/voice_templates/delete.py:30
 #, python-brace-format
 msgid "💔 Voice template {name} deteled."
-msgstr "💔 Voice template {name} deteled."
+msgstr ""
 
-#: televoicer/handlers/voice_template.py:166
+#: televoicer/handlers/voice_templates/show.py:46
+msgid "💔 You don't have any voice templates yet."
+msgstr ""
+
+#: televoicer/handlers/voice_templates/show.py:61
+#: televoicer/handlers/voice_templates/show.py:70
 #, python-brace-format
-msgid "Voice template {name}"
-msgstr "Voice template {name}"
+msgid "❤️ Your voice templates ({page}/{total_page}):\n"
+msgstr ""
 

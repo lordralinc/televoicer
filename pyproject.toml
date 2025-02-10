@@ -1,6 +1,6 @@
 [project]
 name = "televoicer"
-version = "0.1.1+hf1"
+version = "0.1.2"
 description = ""
 authors = [{ name = "lordralinc", email = "lordralinc@gmail.com" }]
 readme = "README.md"
@@ -20,6 +20,7 @@ black = "^23.3.0"
 isort = "^5.12.0"
 ruff = ">=0.0.246"
 pytest = "^8.3.4"
+pytest-asyncio = "^0.25.3"
 
 [tool.black]
 line-length = 99

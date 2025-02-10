@@ -9,13 +9,14 @@
       "type": "debugpy",
       "request": "launch",
       "module": "pytest",
-      "args": ["."]
+      "args": [".", "-vv"]
     },
     {
       "name": "televoicer",
       "type": "debugpy",
       "request": "launch",
-      "module": "televoicer"
+      "module": "televoicer",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

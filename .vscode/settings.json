@@ -1,0 +1,28 @@
+{
+  "python.analysis.packageIndexDepths": [
+    {
+      "depth": 5,
+      "name": "aiogram"
+    },
+    {
+      "depth": 5,
+      "name": "tortoise"
+    }
+  ],
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.displayEnglishDiagnostics": true,
+  "python.analysis.fixAll": [],
+  "python.analysis.indexing": true,
+  "python.analysis.regenerateStdLibIndices": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.analysis.typeEvaluation.deprecateTypingAliases": true,
+  "python.analysis.userFileIndexingLimit": -1,
+  "python.languageServer": "Pylance",
+  "python.terminal.activateEnvInCurrentTerminal": true
+}
